@@ -3,6 +3,7 @@ const core = require('@actions/core');
 const exec = require('@actions/exec');
 
 function run() {
+  core.notice('Hello from js action!');
   // 1) Get some input values
   const bucket = core.getInput('bucket', { required: true });
   const bucketRegion = core.getInput('bucket-region', { required: true });
